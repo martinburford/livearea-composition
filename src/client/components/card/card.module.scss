@@ -1,0 +1,21 @@
+@import '../../../scss/mixins';
+@import '../../../scss/placeholders';
+@import '../../../scss/variables';
+
+.card {
+  @extend %component-padding;
+  background: $cloud;
+
+  @include breakpoint($desktop-up) {
+    @include box-shadow(0, 0, $shadow-m, $dust);
+    border-radius: $radius-m;
+  }
+}
+
+@include breakpoint($tablet-landscape-down) {
+  main > [data-selector='card'] {
+    border-top-left-radius: $radius-m;
+    border-top-right-radius: $radius-m;
+    margin-top: -$spacing-xs;
+  }
+}
