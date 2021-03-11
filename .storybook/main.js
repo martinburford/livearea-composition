@@ -9,6 +9,17 @@ module.exports = {
     "@storybook/addon-viewport"
   ],
 
+  refs: {
+    "tier-1": {
+      title: "Livearea tier 1",
+      url: "https://martinburford.github.io/livearea-components-tier1/storybook-static/"
+    },
+    "tier-2": {
+      title: "Livearea tier 2",
+      url: "https://martinburford.github.io/livearea-components-tier2/storybook-static/"
+    }
+  },
+
   stories: [
     "../src/client/components/**/*.stories.mdx",
     "../src/client/components/**/*.stories.js"
